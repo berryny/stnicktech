@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>First HTML Page</title>
+  <!-- NOTE: Internal CSS -->
+  <style type="text/css" media="screen">
+    /* NOTE: This is a comment */
+    body {
+        font-size: 16px;
+    }
+    header {
+      background-color: yellow !important;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .main {
+      background-color: orange;
+    }
+    #mainID {
+      color: blue;
+    }
+    menu ul {
+      margin: 0;
+      padding: 0;
+    }
+    menu ul li {
+      display: inline;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- This is a HTML comment -->
+  <div class="wrapper">
+    <header class="header" role="banner" style="background-color: red;">
+      <div class="logo" role="img">
+        <img src="https://picsum.photos/100" alt="Company Logo">
+      </div>
+      <nav>
+        <menu>
+          <ul>
+            <li>About</li>
+            <li>Forms</li>
+            <li>Events</li>
+          </ul>
+        </menu>
+      </nav>
+    </header>
+    <main class="main" id="mainID">
+      This is main
+    </main>
+    <footer class="footer">
+      This is footer
+    </footer>
+  </div>
+</body>
+
+</html>
