@@ -6,32 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>First HTML Page</title>
+  <link rel="stylesheet" href="css/styles2.css">
   <!-- NOTE: Internal CSS -->
   <style type="text/css" media="screen">
-    /* NOTE: This is a comment */
-    body {
-        font-size: 16px;
-    }
-    header {
-      background-color: yellow !important;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .main {
-      background-color: orange;
-    }
-    #mainID {
-      color: blue;
-    }
-    menu ul {
-      margin: 0;
-      padding: 0;
-    }
-    menu ul li {
-      display: inline;
-    }
+
   </style>
 </head>
 
@@ -53,7 +31,14 @@
       </nav>
     </header>
     <main class="main" id="mainID">
-      This is main
+        <div class="boxes">
+          <div class="box">
+            <h1>Box 1</h1>
+            <p>Content Here</p>
+          </div>
+          <div class="box">Box 2</div>
+          <div class="box">Box 3</div>
+        </div>
     </main>
     <footer class="footer">
       This is footer

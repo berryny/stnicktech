@@ -1,0 +1,38 @@
+@import url("normalize.css");
+/* NOTE: This is a comment */
+body {
+  font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857143;
+	color: #767676;
+	background-color: #ffffff;
+}
+header {
+  background-color: yellow !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .boxes {
+  background-color: orange;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+#mainID {
+  color: blue;
+}
+menu ul {
+  margin: 0;
+  padding: 0;
+}
+menu ul li {
+  display: inline;
+}
+@media only screen and (max-width: 600px) {
+  .main .boxes {
+    flex-direction: column;
+  }
+}
