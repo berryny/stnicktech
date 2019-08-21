@@ -7,6 +7,7 @@
 .hero {
   text-align: center;
 }
+/*
 .main .boxes {
   background-color: orange;
   display: flex;
@@ -14,10 +15,24 @@
   flex-direction: row;
   align-items: baseline;
 }
+.main .boxes .box {
+  flex: 1 1 auto;
+}
 .main .boxes .box img {
   display: block;
   width: 100%;
 }
+*/
+.main .boxes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2%;
+}
+.main .boxes .box img {
+  display: block;
+  width: 100%;
+}
+
 
 footer address {
   font-style: normal;
