@@ -286,11 +286,11 @@ ul.social-list li > a {
 .container {
 	padding: 2%;
 }
-/* NOTE: Community News Section */
+/* NOTE: article, section and aside */
 article {
 	display: grid;
 	grid-gap: 1em;
-	grid-template-columns: [community-info] 2fr [community-end] .55fr;
+	grid-template-columns: [article-start] 2fr [article-end] .55fr;
 }
 article h2 {
   font-size: 2em;
@@ -299,14 +299,15 @@ article h2 {
 article h2:first-of-type {
   margin-top: 0;
 }
+.article-wrapper {
+  grid-column: article-start;
+}
 section.news {
-	grid-column: community-info;
 	display: grid;
 	grid-gap: 2em 1em;
 	grid-template-columns: repeat(2, auto);
 }
 .gallery-container {
-	grid-column: community-info;
 	display: grid;
 	grid-gap: 2em 1em;
 	grid-template-columns: repeat(3, auto);
@@ -336,8 +337,8 @@ section.news {
 .card-wrapper .card-details .date {
 	margin-top: 0;
 }
-aside.community-sidebar {
-	grid-column: community-end;
+aside.sidebar {
+	grid-column: article-end;
 }
 aside h6 {
 	margin: 0;
@@ -555,22 +556,24 @@ aside ul {
 		padding: 10%;
 	}
 	.about-content,
-	main .members {
+	main .members,
+  main .contacts,
+  article .gallery-wrapper {
 		grid-template-columns: repeat(1, 1fr);
 	}
-  .contacts {
-    grid-template-columns: repeat(1, 1fr);
-  }
 }
 @media only screen and (max-width: 60em) {
 	article {
-		grid-template-columns: auto;
-		grid-gap: 2em 0;
+		grid-gap: 2em 1em;
 	}
 	article, .section-intro {
 		grid-template-columns: auto;
+    display: block;
 	}
-	.members {
+  article aside {
+    margin-top: 2em;
+  }
+	.members, .gallery-wrapper {
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
