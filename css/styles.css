@@ -72,6 +72,9 @@ h6 {
 	letter-spacing: 1px;
 	font-weight: 400;
 }
+.shadow {
+    box-shadow: 4px 6px 8px 0px #ccc;
+}
 .rounded-btn-outline,
 .rounded-btn {
 	display: block;
@@ -290,6 +293,11 @@ ul.social-list li > a {
 	font-size: .9em;
 	font-style: italic;
 }
+.statics span.counter {
+  display: block;
+  width: 100%;
+}
+
 .container {
 	padding: 2%;
 }
