@@ -31,10 +31,12 @@
 .abstract-powder-splatted-background,Freeze-motion-of-green-powder-exploding/throwing-green-dust-4-hsla { color: hsla(90, 55, 66, 1); }
 .abstract-powder-splatted-background,Freeze-motion-of-green-powder-exploding/throwing-green-dust-5-hsla { color: hsla(0, 0, 95, 1); }
 */
-* { box-sizing: border-box; }
+* {
+	box-sizing: border-box;
+}
 body {
 	font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
-	font-size: 14px;
+	font-size: 1.25em;
 	font-weight: 400;
 	line-height: 1.42857143;
 	color: #767676;
@@ -68,6 +70,9 @@ h1, h2, h3, h4, h5, h6 {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 	/* https://css-tricks.com/almanac/properties/w/will-change/ */
 	will-change: scroll-position, transform;
+	transition: 0.3s linear;
+	-webkit-transition: 0.3s linear;
+	-moz-transition: 0.3s linear;
 }
 .header .logo img {
 	max-width: 100px;
@@ -112,10 +117,10 @@ menu ul li > a {
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
-	padding: 0 1.625em;
+	padding: 0 1em;
 }
 .nav-icons > div:not(:last-child) {
-	padding: 0 1.625em;
+	padding: 0 1em;
 }
 .nav-icons,
 .nav-icons a {
@@ -144,21 +149,23 @@ menu ul li > a {
 	line-height: normal;
 }
 .hero h1 span {
-	font-size: 3em;
+	font-size: 2.4em;
 	display: block;
 }
 .rounded-btn {
+	display: block;
 	font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
 	font-weight: 400;
 	font-size: 0.75em;
 	color: #fff;
 	border-radius: 3em;
-	padding: 1em 9em;
+	padding: 1em 6em;
 	border: 2px solid #A9D979;
 	line-height: 1.625em;
 	text-transform: uppercase;
 	text-align: center;
 	background-color: #0D5902;
+	max-width: 300px;
 }
 
 .hero ul {
@@ -200,19 +207,19 @@ menu ul li > a {
 .info-container .lead {
 	display: block;
 	width: 70%;
-	font-size: 1.4375em;
-	line-height: 1.69565217em;
+	font-size: 1em;
+	line-height: 1.4em;
 	margin: 0 auto;
 }
 .statics {
 	display: flex;
-	flex-flow: row;
-	justify-content: space-between;
+	flex-flow: row wrap;
+	justify-content: space-around;
 	align-content: center;
 	text-align: center;
 	color: #F2F2F2;
 	background-color: rgba(9, 63, 1, .45);
-	padding: 4.125em;
+	padding: 4.125em 0;
 }
 .statics section {
 	margin-bottom: 30px;
@@ -221,7 +228,7 @@ menu ul li > a {
 	font-size: 4em;
 }
 .statics h3 {
-	font-size: 2em;
+	font-size: 1em;
 	margin: 0 0 .5em 0;
 }
 
@@ -232,13 +239,13 @@ menu ul li > a {
 article {
 	display: grid;
 	grid-gap: 1em;
-	grid-template-columns: [community-info] 2fr [community-end] .5fr;
+	grid-template-columns: [community-info] 2fr [community-end] .55fr;
 	margin-top: 2em;
 }
 section.news {
 	grid-column: community-info;
 	display: grid;
-	grid-gap: 2em 2em;
+	grid-gap: 2em 1em;
 	grid-template-columns: repeat(2, auto);
 }
 .card-wrapper {
@@ -257,6 +264,15 @@ section.news {
 	font-weight: 400;
 	margin-top: 0;
 }
+.card-wrapper .card-details h5 {
+	font-weight: 400;
+	font-size: 1.25em;
+	color: #232323;
+	margin: 0;
+}
+.card-wrapper .card-details .date {
+	margin-top: 0;
+}
 aside.community-sidebar {
 	grid-column: community-end;
 }
@@ -266,7 +282,7 @@ aside h6 {
 	font-weight: 400;
 	margin: 0;
 	margin-bottom: 2em;
-	padding-bottom: 2em;
+	padding-bottom: 1em;
 	border-bottom: 1px solid rgba(242, 242, 242, 1);
 }
 aside ul {
@@ -325,4 +341,38 @@ footer {
 	padding: 1em 0;
 	color: #f5f5f5;
 	font-size: .70em;
+}
+
+@media only screen and (max-width: 30em) {
+	.hero h1 {
+    font-size: 1.2em;
+		text-align: center;
+	}
+	.statics {
+    flex-flow: column;
+	}
+	section.news {
+		grid-template-columns: auto;
+		grid-gap: 2em 0;
+	}
+	/* article, section.news, .section-intro {
+		grid:none;
+		margin-bottom: 30px;
+	} */
+	.section-intro .section-details h2 {
+		line-height: 1;
+		font-size: 2em;
+	}
+	.section-intro .section-details {
+		padding: 10%;
+	}
+}
+@media only screen and (max-width: 60em) {
+	article {
+		grid-template-columns: auto;
+		grid-gap: 2em 0;
+	}
+	article, .section-intro {
+		grid-template-columns: auto;
+	}
 }
