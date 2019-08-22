@@ -375,7 +375,7 @@ aside ul {
 	display: block;
 	width: 100%;
 }
-
+/* NOTE: About Section */
 .about-content {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -399,7 +399,7 @@ aside ul {
 	font-size: 3em;
 	font-weight: 400;
 	margin-bottom: 0;
-	color: #6EBF34;	
+	color: #6EBF34;
 }
 .members {
 	display: grid;
@@ -425,6 +425,38 @@ aside ul {
 	text-align: left;
 }
 
+/* NOTE: Contact */
+.contacts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  margin: 3em 0;
+}
+.contacts > div {
+  margin: 0;
+  padding: 6.5em 2em;
+  min-height: 434px;
+}
+.contacts div:first-of-type {
+  background-color: #6EBF34;
+}
+.contacts div:first-of-type,
+.contacts div:first-of-type a {
+  color: #fff;
+}
+.contacts div:last-of-type,
+.contacts div:last-of-type a {
+  color: #F2F2F2;
+}
+.contacts div:last-of-type {
+  background-color: #0D5902;
+}
+.contacts span {
+  font-size: 4em;
+}
+.contacts h4 {
+  font-size: 1.4375em;
+}
 /* NOTE: Footer */
 .footer {
 	background-color: #0D5902;
@@ -511,6 +543,9 @@ aside ul {
 	main .members {
 		grid-template-columns: repeat(1, 1fr);
 	}
+  .contacts {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 @media only screen and (max-width: 60em) {
 	article {
