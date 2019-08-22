@@ -54,6 +54,10 @@ a {
 a:hover {
   color: #A9D979;
 }
+img {
+  display: block;
+  width: 100%;
+}
 address { font-style: normal; }
 menu, ul { margin: 0; padding: 0; }
 ul.unstyle-list {
@@ -68,20 +72,23 @@ h6 {
 	letter-spacing: 1px;
 	font-weight: 400;
 }
+.rounded-btn-outline,
 .rounded-btn {
 	display: block;
 	font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
 	font-weight: 400;
 	font-size: 0.6em;
-	color: #fff;
 	border-radius: 3em;
 	padding: 1em 5em;
 	border: 2px solid #A9D979;
 	line-height: 1.625em;
 	text-transform: uppercase;
 	text-align: center;
-	background-color: #0D5902;
-	max-width: 300px;
+}
+.rounded-btn {
+  background-color: #0D5902;
+  color: #fff;
+  max-width: 300px;
 }
 /* NOTE: Site Design Styles */
 .wrapper {
@@ -315,10 +322,7 @@ section.news {
 .card-wrapper {
 	background-color: #fff;
 }
-.card-wrapper img {
-	display: block;
-	width: 100%;
-}
+
 .card-wrapper .card-details {
 	padding: 1.625em;
 }
@@ -361,8 +365,6 @@ aside ul {
 	direction: rtl;
 }
 .section-intro img {
-	display: block;
-	width: 100%;
 	max-height: 686px;
 }
 .section-intro .section-details {
@@ -387,10 +389,7 @@ aside ul {
 	grid-template-columns: repeat(4, 1fr);
 	grid-gap: 1em 1em;
 }
-.gallery-wrapper .gallery-img img {
-	display: block;
-	width: 100%;
-}
+
 /* NOTE: About Section */
 .about-content {
 	display: grid;
@@ -407,12 +406,44 @@ aside ul {
 	font-size: 2em;
 	color: #0D5902;
 }
-.team-members h3,
+/* .careers {
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+  grid-gap: 2em 3em;
+} */
+.careers {
+  display: grid;
+  grid-template-columns: [col-start] 1fr [col-end] 1fr;
+  align-items: baseline;
+  grid-gap: 0 2em;
+  /* grid-template-rows: 9em auto; */
+}
+.careers h3 {
+  font-size: 2em;
+  font-weight: 400;
+}
+.careers .information-lead {
+  grid-column: 1 / span 2;
+}
+.career-list section span {
+  display: block;
+}
+.career-list section span a {
+  font-size: 1.3em;
+  color: #465902;
+}
+.career-list section {
+  background-color: #fff;
+  margin-bottom: 2em;
+  padding: 1em 2em;
+}
+/* .team-members h3,
 .team-members p {
 	text-align: center;
-}
+} */
+.careers h2,
 .team-members h3 {
-	font-size: 3em;
+	font-size: 2.75em;
 	font-weight: 400;
 	margin-bottom: 0;
 	color: #6EBF34;
@@ -421,7 +452,7 @@ aside ul {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-gap: 1em 1em;
-	padding: 0 5%;
+	/* padding: 0 5%; */
 }
 .members h5 {
 	font-size: 1em;
@@ -433,8 +464,6 @@ aside ul {
 	line-height: 2.6em;
 }
 .members img {
-	display: block;
-	width: 100%;
 	margin-bottom: 1.625em;
 }
 .members section p {
@@ -566,7 +595,7 @@ aside ul {
 	article {
 		grid-gap: 2em 1em;
 	}
-	article, .section-intro {
+	article, .section-intro, .careers {
 		grid-template-columns: auto;
     display: block;
 	}
