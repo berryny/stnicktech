@@ -288,13 +288,21 @@ article {
 	display: grid;
 	grid-gap: 1em;
 	grid-template-columns: [community-info] 2fr [community-end] .55fr;
-	margin-top: 2em;
+}
+article h2:first-of-type {
+  margin-top: 0;
 }
 section.news {
 	grid-column: community-info;
 	display: grid;
 	grid-gap: 2em 1em;
 	grid-template-columns: repeat(2, auto);
+}
+.gallery-container {
+	grid-column: community-info;
+	display: grid;
+	grid-gap: 2em 1em;
+	grid-template-columns: repeat(3, auto);
 }
 .card-wrapper {
 	background-color: #fff;
@@ -368,8 +376,8 @@ aside ul {
 /* NOTE: Gallery Section */
 .gallery-wrapper {
 	display: grid;
-	grid-template-columns: repeat(6, 1fr);
-	grid-column-gap: 1em;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 1em 1em;
 }
 .gallery-wrapper .gallery-img img {
 	display: block;
