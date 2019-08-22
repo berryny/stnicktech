@@ -209,9 +209,12 @@ menu ul li > a {
   }
 }
 .hero h1 {
+  display: block;
 	font-size: 2em;
 	line-height: normal;
 	color: #f5f5f5;
+  width: 100%;
+  text-align: center;
 }
 .hero h1 span {
 	font-size: 2.4em;
@@ -221,6 +224,9 @@ menu ul li > a {
 	position: absolute;
 	font-size: 1.25em;
 	bottom: 3%;
+  left: 0;
+  width: 100%;
+  text-align: center;
 }
 ul.social-list li {
 	list-style: none;
@@ -373,7 +379,8 @@ aside ul {
 	direction: rtl;
 }
 .section-intro img {
-	max-height: 686px;
+  /* width: 100%;
+	max-height: 686px; */
 }
 .section-intro .section-details {
 	display: flex;
@@ -425,7 +432,7 @@ aside ul {
   width: 47vw;
   border-bottom: 1px solid #A9D979;
   border-right: 1px solid #A9D979;
-  padding: 2% 0;
+  padding: 2% 10px 2% 0;
   display: grid;
   grid-template-columns: [about-left] 5em [about-right] 1fr;
   /* grid-template-rows: [row1-start] auto [row2-start]; */
@@ -445,7 +452,7 @@ aside ul {
   text-align: center;
 }
 .about-wrapper section h2,
-.about-wrapper section p {
+.about-wrapper section .text {
   grid-column: about-right;
   margin: 0;
 }
@@ -639,7 +646,6 @@ aside ul {
   .about-wrapper section {
     width: 100vw;
     border-right: 0;
-    padding-right: 5%;
   }
 }
 @media only screen and (max-width: 60em) {
