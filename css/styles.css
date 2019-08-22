@@ -51,6 +51,9 @@ a {
 	color: #232323;
 	text-decoration: none;
 }
+a:hover {
+  color: #A9D979;
+}
 address { font-style: normal; }
 menu, ul { margin: 0; padding: 0; }
 ul.unstyle-list {
@@ -288,6 +291,10 @@ article {
 	display: grid;
 	grid-gap: 1em;
 	grid-template-columns: [community-info] 2fr [community-end] .55fr;
+}
+article h2 {
+  font-size: 2em;
+  font-weight: 400;
 }
 article h2:first-of-type {
   margin-top: 0;
