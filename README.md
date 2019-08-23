@@ -10,6 +10,9 @@ MAMP is a free, local server environment that can be installed under macOS and W
 Atom text editor for PC/Mac
 [Download](https://atom.io/)
 
+Local by Freewheel
+[Download]()
+
 ### Alternatives
 
 - [Marvel](https://marvelapp.com) is perfect for individuals and teams of all sizes. Start for free.
@@ -78,6 +81,23 @@ p {
     font-size: 20px;
 }
 ```
+
+## Third-party Resources
+
+jQuery - version 3.4.1
+[Download](https://jquery.com/download/)
+
+Parallax JS
+[Instruction and Download](https://github.com/pixelcog/parallax.js/)
+
+jQuery - waypoints version 4.0.1
+[Learn more](http://imakewebthings.com/waypoints/api/waypoint/)
+```
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+```
+
+jQuery - counterup
+[CounterUp - 1](https://github.com/bfintal/Counter-Up)
 
 ## Resources
 
