@@ -241,7 +241,6 @@ ul.social-list li > a {
 }
 
 /* NOTE: Banner / Secondary Pages */
-.banner {}
 .banner h1 {
 	font-size: 4em;
 	font-weight: 600;
@@ -611,16 +610,20 @@ aside ul {
 	border-top: 2px solid #A9D979;
 }
 .footer .copy p { margin: 0; }
+
+/* NOTE: Responsive Design */
 @media only screen and (max-width: 30em) {
 	.hero h1 {
     font-size: 1.2em;
 		text-align: center;
 	}
+  .banner h1 {
+  	font-size: 4em;
+  }
 	.statics {
     flex-flow: column;
 	}
 	section.news {
-		grid-template-columns: auto;
 		grid-gap: 2em 0;
 	}
 	/* article, section.news, .section-intro {
@@ -634,11 +637,8 @@ aside ul {
 	.section-intro .section-details {
 		padding: 10%;
 	}
-	.about-content,
-	main .members,
-  main .contacts,
-  article .gallery-wrapper {
-		grid-template-columns: repeat(1, 1fr);
+  main .responsive-grid {
+		grid-template-columns: auto;
 	}
   .about-wrapper {
     flex-flow: column wrap;
@@ -652,14 +652,15 @@ aside ul {
 	article {
 		grid-gap: 2em 1em;
 	}
-	article, .section-intro, .careers {
+	article, .section-intro,
+  main .responsive-grid {
 		grid-template-columns: auto;
     display: block;
 	}
   article aside {
     margin-top: 2em;
   }
-	.members, .gallery-wrapper {
+	main .responsive-grid {
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
