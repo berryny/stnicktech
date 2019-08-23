@@ -100,13 +100,13 @@ h6 {
 	position: relative;
 	flex: 1 0 auto;
 }
-.wrapper .responsive-flex-row {
-  display: flex;
-  flex-flow: row wrap;
-}
 .parallax-window {
 	/* min-height: 400px; */
 	background: transparent;
+}
+body .responsive-flex-row {
+  display: flex;
+  flex-flow: row wrap;
 }
 
 /* NOTE: Site Design Styles */
