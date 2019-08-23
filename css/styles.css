@@ -31,6 +31,7 @@
 .abstract-powder-splatted-background,Freeze-motion-of-green-powder-exploding/throwing-green-dust-4-hsla { color: hsla(90, 55, 66, 1); }
 .abstract-powder-splatted-background,Freeze-motion-of-green-powder-exploding/throwing-green-dust-5-hsla { color: hsla(0, 0, 95, 1); }
 */
+
 html, body {
   height: 100%;
 }
@@ -72,6 +73,8 @@ h6 {
 	letter-spacing: 1px;
 	font-weight: 400;
 }
+
+/* NOTE: Global Styles */
 .shadow {
     box-shadow: 4px 6px 8px 0px #ccc;
 }
@@ -93,14 +96,21 @@ h6 {
   color: #fff;
   max-width: 300px;
 }
-/* NOTE: Site Design Styles */
 .wrapper {
 	position: relative;
 	flex: 1 0 auto;
 }
+.wrapper .responsive-flex-row {
+  display: flex;
+  flex-flow: row wrap;
+}
+.parallax-window {
+	/* min-height: 400px; */
+	background: transparent;
+}
+
+/* NOTE: Site Design Styles */
 .header {
-	display: flex;
-	flex-flow: row wrap;
 	justify-content: space-between;
 	/* align-items: center; */
 	position: absolute;
@@ -168,10 +178,7 @@ menu ul li > a {
 	color: #fff;
 }
 
-.parallax-window {
-	/* min-height: 400px; */
-	background: transparent;
-}
+/* NOTE: Index Hero Styles */
 .hero-container.parallax-window,
 .hero {
 	height: 100vh;
@@ -248,6 +255,7 @@ ul.social-list li > a {
 	margin-bottom: 0.40625em;
 	color: #f5f5f5;
 }
+
 /* NOTE: About information section */
 .light-container {
 	background-color: #F2F2F2;
@@ -275,8 +283,6 @@ ul.social-list li > a {
 	margin: 0 auto;
 }
 .statics {
-	display: flex;
-	flex-flow: row wrap;
 	justify-content: space-around;
 	align-content: center;
 	text-align: center;
@@ -327,15 +333,20 @@ section.news {
 	grid-gap: 2em 1em;
 	grid-template-columns: repeat(2, auto);
 }
-.gallery-container {
+/* .gallery-container {
 	display: grid;
 	grid-gap: 2em 1em;
 	grid-template-columns: repeat(3, auto);
+} */
+.gallery-wrapper {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 1em 1em;
 }
+
 .card-wrapper {
 	background-color: #fff;
 }
-
 .card-wrapper .card-details {
 	padding: 1.625em;
 }
@@ -367,7 +378,8 @@ aside ul {
 	padding: 0 2%;
 	margin-bottom: 3em;
 }
-/* NOTE: Section Introduction */
+
+/* NOTE: Index Large (Dark/Light) Annoucement */
 .section-intro {
 	display: grid;
 	grid-template-columns: [col-start] 1fr [col-end] 1fr;
@@ -397,14 +409,7 @@ aside ul {
 	margin: 0;
 }
 
-/* NOTE: Gallery Section */
-.gallery-wrapper {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-gap: 1em 1em;
-}
-
-/* NOTE: About Section */
+/* NOTE: About Page */
 .about-content {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -421,8 +426,6 @@ aside ul {
 	color: #0D5902;
 }
 .about-wrapper {
-  display: flex;
-  flex-flow: row wrap;
   justify-content: flex-start;
   align-content: center;
   margin: 0 auto 3em auto;
@@ -519,6 +522,22 @@ aside ul {
 	text-align: left;
 }
 
+/* NOTE: Forms Page */
+
+/* NOTE: Events Page */
+
+/* NOTE: Resources Page  */
+.resources {
+  justify-content: space-between;
+}
+.resource-section ul li {
+  display: block;
+}
+/* NOTE: Gallery Page */
+
+/* NOTE: News Page */
+.news {}
+
 /* NOTE: Contact */
 .contacts {
   display: grid;
@@ -551,6 +570,7 @@ aside ul {
 .contacts h4 {
   font-size: 1.4375em;
 }
+
 /* NOTE: Footer */
 .footer {
 	background-color: #0D5902;
@@ -559,8 +579,6 @@ aside ul {
 	flex-shrink: 0;
 }
 .footer-content {
-	display: flex;
-	flex-flow: row wrap;
 	justify-content: space-between;
 	align-items: baseline;
 	padding: 2% 4%;
