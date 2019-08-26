@@ -1,5 +1,5 @@
 @import url("normalize.css");
-@import url("all.min.css");
+@import url("all.min.css"); /* Fontawesome Stylesheet */
 @import url('https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:400,500,600,700&display=swap');
 /*
 	font-family: 'Montserrat', sans-serif;
@@ -14,7 +14,6 @@
 .abstract-powder-splatted-background,Freeze-motion-of-green-powder-exploding/throwing-green-dust-4-hex { color: #A9D979; }
 .abstract-powder-splatted-background,Freeze-motion-of-green-powder-exploding/throwing-green-dust-5-hex { color: #F2F2F2; }
 */
-
 /* Color Theme Swatches in RGBA */
 /*
 .abstract-powder-splatted-background,Freeze-motion-of-green-powder-exploding/throwing-green-dust-1-rgba { color: rgba(13, 89, 1, 1); }
@@ -178,7 +177,7 @@ menu ul li > a {
 	color: #fff;
 }
 
-/* NOTE: Index Hero Styles */
+/* NOTE: Landing Page - Index Hero Styles */
 .hero-container.parallax-window,
 .hero {
 	height: 100vh;
