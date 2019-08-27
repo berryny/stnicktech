@@ -99,6 +99,8 @@ jQuery - waypoints version 4.0.1
 jQuery - counterup
 [CounterUp - 1](https://github.com/bfintal/Counter-Up)
 
+jQuery - animated scrolling with jQuery
+[jQuery.scrollTo](https://github.com/flesler/jquery.scrollTo#jqueryscrollto)
 ## Resources
 
 Test a [website's performance](https://www.webpagetest.org/)
