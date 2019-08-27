@@ -327,10 +327,10 @@ article h2:first-of-type {
 .article-wrapper {
   grid-column: article-start;
 }
-section.news {
+.post-details {
 	display: grid;
 	grid-gap: 2em 1em;
-	grid-template-columns: repeat(2, auto);
+	grid-template-columns: repeat(3, auto);
 }
 /* .gallery-container {
 	display: grid;
@@ -476,17 +476,17 @@ aside ul {
 .careers .information-lead {
   grid-column: 1 / span 2;
 }
-.career-list section span {
-  display: block;
-}
-.career-list section span a {
-  font-size: 1.3em;
-  color: #465902;
-}
-.career-list section {
+.career-list {
   background-color: #fff;
   margin-bottom: 2em;
   padding: 1em 2em;
+}
+.career-list span {
+  display: block;
+}
+.career-list span a {
+  font-size: 1.3em;
+  color: #465902;
 }
 /* .team-members h3,
 .team-members p {
@@ -521,6 +521,23 @@ aside ul {
 	text-align: left;
 }
 
+/* NOTE: Events and News Common Styles */
+.post-details {
+  display: grid;
+	grid-template-columns: [post-left] 2fr [post-right] 1fr;
+  grid-gap: 0;
+  align-items: normal;
+}
+.post-hero-img,
+.post-description {
+  grid-column: post-left;
+}
+.post-hero-details,
+.post-info {
+  grid-column: post-right;
+  background-color: #fff;
+  padding: 0 4%;
+}
 /* NOTE: Forms Page */
 
 /* NOTE: Events Page */
@@ -640,7 +657,7 @@ aside ul {
 	.statics {
     flex-flow: column;
 	}
-	section.news {
+	section.post-details {
 		grid-gap: 2em 0;
 	}
 	/* article, section.news, .section-intro {
