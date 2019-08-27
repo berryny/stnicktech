@@ -94,6 +94,7 @@ h6 {
   background-color: #0D5902;
   color: #fff;
   max-width: 300px;
+  margin: 0 auto;
 }
 .wrapper {
 	position: relative;
