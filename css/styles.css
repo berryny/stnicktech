@@ -522,22 +522,23 @@ aside ul {
 }
 
 /* NOTE: Events and News Common Styles */
-.post-details {
+.post-detail {
   display: grid;
 	grid-template-columns: [post-left] 2fr [post-right] 1fr;
   grid-gap: 0;
   align-items: normal;
 }
-.post-hero-img,
-.post-description {
+.post-detail .post-hero-img,
+.post-detail .post-description {
   grid-column: post-left;
 }
-.post-hero-details,
-.post-info {
+.post-detail .post-hero-details,
+.post-detail .post-info {
   grid-column: post-right;
   background-color: #fff;
   padding: 0 4%;
 }
+
 /* NOTE: Forms Page */
 
 /* NOTE: Events Page */
@@ -593,6 +594,7 @@ aside ul {
 	color: #f5f5f5;
 	margin-top: 3em;
 	flex-shrink: 0;
+  font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
 }
 .footer-content {
 	justify-content: space-between;
@@ -628,7 +630,15 @@ aside ul {
 	-webkit-transition: 0.2s linear;
 	-moz-transition: 0.2s linear;
 }
-.footer-content h6,
+.footer-content .menu-footer ul.footer-logos {
+  display: inline-flex;
+}
+.footer-content .menu-footer ul.footer-logos li {
+  width: 50px;
+}
+.footer-content h6{
+  margin-bottom: .75em;
+}
 .footer-content .social-list {
 	font-size: 0.625em;
 }
