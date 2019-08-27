@@ -14,13 +14,19 @@
     classYearElement.innerHTML = currentYear;
   });
 
-  /*============================================
-    COUNTER
-  ==============================================*/
+  // NOTE: Jquery DOM
   $(document).ready(function( $ ) {
+
+    /*============================================
+    COUNTER
+    ==============================================*/
     $('.counter').counterUp({
       delay: 10,
       time: 1000
+    });
+
+    $('#contact-footer').click(function(){
+      $.scrollTo( $('#contactus').val(), {duration:2500} );
     });
   });
 })(); // the end!
